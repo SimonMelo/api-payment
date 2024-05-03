@@ -16,11 +16,13 @@ POST /payments
 
 Cria um novo pagamento com as informações fornecidas no corpo da requisição.
 
-Exemplo de corpo da requisição:
+**Exemplo de corpo da requisição:**
+```json
 {
   "amount": 50.00
   "description": "Compra de produto",
 }
+```
 
 ### Listar todos os pagamentos
 
@@ -34,10 +36,12 @@ GET /payments/:id
 
 Retorna as informações de um pagamento específico com base no ID fornecido na URL.
 
-Exemplo de resposta:
+**Exemplo de resposta:**
+```json
 {
   "id": "1",
   "amount": 50.00,
   "description": "Compra de produto",
   "status": "completed"
 }
+```
